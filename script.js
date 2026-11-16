@@ -1,5 +1,13 @@
 (() => {
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const i18n = window.AIS_I18N;
+  const WA = 'https://wa.me/77474662973';
+
+  /* Language-dependent links */
+  const waConsult = document.getElementById('wa-consult');
+  const syncLang = () => { waConsult.href = WA + '?text=' + encodeURIComponent(i18n.t('wa.consult')); };
+  syncLang();
+  i18n.onChange(syncLang);
   const hasIO = 'IntersectionObserver' in window;
 
   /* Header shadow */
@@ -13,7 +21,7 @@
   const nav = document.getElementById('nav');
   const setMenu = (open) => {
     burger.setAttribute('aria-expanded', String(open));
-    burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+    burger.setAttribute('aria-label', i18n.t(open ? 'aria.menuClose' : 'aria.menuOpen'));
     nav.classList.toggle('is-open', open);
     document.body.classList.toggle('menu-open', open);
   };
@@ -116,8 +124,12 @@
       if (!valid && !first) first = el;
     });
     if (first) return first.focus();
-    const msg = `Здравствуйте! Хочу получить консультацию по поступлению в AIS.\nИмя: ${form.elements.name.value.trim()}\nТелефон: ${form.elements.phone.value}\nКласс: ${form.elements.grade.value}`;
-    window.open('https://wa.me/77474662973?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    const msg = i18n.t('wa.form', {
+      name: form.elements.name.value.trim(),
+      phone: form.elements.phone.value,
+      grade: form.elements.grade.selectedOptions[0].textContent.trim(),
+    });
+    window.open(WA + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
   });
   form.addEventListener('input', (e) => e.target.closest('.field')?.classList.remove('is-invalid'));
 

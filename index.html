@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aqbobek International School — Актобе</title>
-  <meta name="description" content="Aqbobek International School — школа в Актобе с аккредитацией CIS, сингапурской программой в начальной школе и трёхъязычным обучением. 0–11 классы.">
+  <title>Aqbobek International School — Aktobe</title>
+  <meta name="description" content="Aqbobek International School in Aktobe: CIS accreditation, Singapore curriculum in primary school and trilingual education. Grades 0–11.">
   <meta name="theme-color" content="#50058A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,38 +15,44 @@
 </head>
 <body>
 
-<!-- Все фото, видео и логотип взяты с официального сайта ais.edu.kz.
-     Для продакшена скопируйте их в папку /assets и замените пути. -->
+<!-- Photos, video and logo come from the official site ais.edu.kz.
+     For production, copy them into /assets and update the paths.
+     Translations (RU / KZ) live in i18n.js; English is the default text below. -->
 
 <div class="topbar">
   <div class="container topbar__inner">
-    <span class="topbar__item">ул. Ораз Татеулы, 13А, Актобе</span>
+    <span class="topbar__item" data-i18n="top.addr">13A Oraz Tateuly St, Aktobe</span>
     <div class="topbar__links">
       <a href="tel:+77786800636">+7 (778) 680 06 36</a>
       <a href="https://wa.me/77474662973" target="_blank" rel="noopener">WhatsApp</a>
       <a href="https://www.instagram.com/ais_aqbobek/" target="_blank" rel="noopener">@ais_aqbobek</a>
+      <a href="https://olympiad.ais.edu.kz/" class="topbar__olymp" target="_blank" rel="noopener" data-i18n="nav.olymp">Olympiad</a>
     </div>
   </div>
 </div>
 
 <header class="header" id="header">
   <div class="container header__inner">
-    <a href="#top" class="brand" aria-label="Aqbobek International School — на главную">
+    <a href="#top" class="brand" aria-label="Aqbobek International School — home" data-i18n-attr="aria-label:aria.home">
       <img src="https://ais.edu.kz/images/logo-violet.png" alt="" width="44" height="44">
       <span><b>AQBOBEK</b><small>International School</small></span>
     </a>
-    <nav class="nav" id="nav" aria-label="Основная навигация">
-      <a href="#about">О школе</a>
-      <a href="#structure">Структура</a>
-      <a href="#campus">Кампус</a>
-      <a href="#life">Жизнь школы</a>
-      <a href="#achievements">Достижения</a>
-      <a href="#admissions">Поступление</a>
-      <a href="#contact">Контакты</a>
-      <a href="https://olympiad.ais.edu.kz/" class="nav__olymp" target="_blank" rel="noopener">Олимпиада</a>
+    <nav class="nav" id="nav" aria-label="Main navigation" data-i18n-attr="aria-label:aria.nav">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#structure" data-i18n="nav.structure">Programmes</a>
+      <a href="#campus" data-i18n="nav.campus">Campus</a>
+      <a href="#life" data-i18n="nav.life">Student life</a>
+      <a href="#achievements" data-i18n="nav.achievements">Achievements</a>
+      <a href="#admissions" data-i18n="nav.admissions">Admissions</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
-    <a href="#contact" class="btn btn--orange header__cta">Подать заявку</a>
-    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.aria">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      <button type="button" data-lang="kk" aria-pressed="false">KZ</button>
+    </div>
+    <a href="#contact" class="btn btn--orange header__cta" data-i18n="cta.apply">Apply now</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -60,30 +66,30 @@
     </video>
     <div class="hero__shade" aria-hidden="true"></div>
     <div class="container hero__content">
-      <p class="hero__pre">Aqbobek International School · Актобе</p>
+      <p class="hero__pre" data-i18n="hero.pre">Aqbobek International School · Aktobe</p>
       <h1 class="hero__title">
         Beyond the<br><span class="hero__word" id="typed">limits</span><span class="caret" aria-hidden="true"></span>
       </h1>
-      <p class="hero__lead">Строим лидеров завтрашнего дня сегодня</p>
+      <p class="hero__lead" data-i18n="hero.lead">Building tomorrow’s leaders today</p>
       <div class="hero__actions">
-        <a href="#contact" class="btn btn--orange btn--lg">Подать заявку</a>
-        <a href="https://wa.me/77474662973?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" target="_blank" rel="noopener" class="btn btn--outline-light btn--lg">Получить консультацию</a>
+        <a href="#contact" class="btn btn--orange btn--lg" data-i18n="cta.apply">Apply now</a>
+        <a href="https://wa.me/77474662973" id="wa-consult" target="_blank" rel="noopener" class="btn btn--outline-light btn--lg" data-i18n="cta.consult">Get a consultation</a>
       </div>
     </div>
-    <ul class="hero__facts container" aria-label="Ключевые факты">
-      <li><b>CIS</b> аккредитованная школа</li>
-      <li><b>3 языка</b> казахский · русский · английский</li>
-      <li><b>Сингапурская</b> программа в начальной школе</li>
+    <ul class="hero__facts container" aria-label="Key facts" data-i18n-attr="aria-label:aria.facts">
+      <li data-i18n="fact.cis"><b>CIS</b> accredited school</li>
+      <li data-i18n="fact.lang"><b>3 languages</b> Kazakh · Russian · English</li>
+      <li data-i18n="fact.sg"><b>Singapore</b> curriculum in primary school</li>
     </ul>
   </section>
 
   <!-- NUMBERS -->
-  <section class="numbers" aria-label="Школа в цифрах">
+  <section class="numbers" aria-label="School in numbers" data-i18n-attr="aria-label:aria.numbers">
     <div class="container numbers__grid">
-      <div><b><span data-count="825">825</span>+</b><span>учеников</span></div>
-      <div><b><span data-count="85">85</span>+</b><span>опытных учителей</span></div>
-      <div><b data-count="6">6</b><span>лет работы AIS</span></div>
-      <div><b data-count="12">12</b><span>программ обучения</span></div>
+      <div><b><span data-count="825">825</span>+</b><span data-i18n="num.students">students</span></div>
+      <div><b><span data-count="85">85</span>+</b><span data-i18n="num.teachers">experienced teachers</span></div>
+      <div><b data-count="6">6</b><span data-i18n="num.years">years of AIS</span></div>
+      <div><b data-count="12">12</b><span data-i18n="num.programs">study programmes</span></div>
     </div>
   </section>
 
@@ -91,24 +97,24 @@
   <section class="section" id="about">
     <div class="container about">
       <div class="about__media reveal">
-        <img src="https://ais.edu.kz/assets/home_4-BHAPINsf.webp" alt="Ученики AIS в актовом зале" loading="lazy">
+        <img src="https://ais.edu.kz/assets/home_4-BHAPINsf.webp" alt="AIS students in the assembly hall" data-i18n-attr="alt:about.alt" loading="lazy">
         <div class="about__badge">
-          <b>2012</b><span>открытие школы «Ақбөбек»</span>
+          <b>2012</b><span data-i18n="about.badge">Aqbobek school founded</span>
         </div>
       </div>
       <div class="about__text">
-        <span class="label reveal">О школе</span>
-        <h2 class="title reveal">Национальные ценности и&nbsp;глобальное гражданство</h2>
+        <span class="label reveal" data-i18n="about.label">About us</span>
+        <h2 class="title reveal" data-i18n="about.title">National values and&nbsp;global citizenship</h2>
         <div class="mission reveal">
-          <h3>Наша миссия</h3>
-          <p>Создание благополучного общества через сохранение национальных ценностей и воспитание глобального гражданства.</p>
+          <h3 data-i18n="about.missionH">Our mission</h3>
+          <p data-i18n="mission">Building a prosperous society by preserving national values and nurturing global citizenship.</p>
         </div>
-        <p class="reveal">Aqbobek International School вырос из школы «Ақбөбек», открытой в 2012 году. В 2020 году она стала международной школой. Современный кампус оснащён технологиями и ресурсами, а учебная среда в нём комфортная и вдохновляющая.</p>
+        <p class="reveal" data-i18n="about.text">Aqbobek International School grew out of the Aqbobek school, founded in 2012, and became an international school in 2020. Our modern campus is equipped with technology and resources for a comfortable, inspiring learning environment.</p>
         <ul class="accred reveal">
-          <li><b>CIS</b><span>Аккредитация по стандартам Council of International Schools</span></li>
-          <li><b>MCE</b><span>Учебная программа Marshall Cavendish Education, Сингапур</span></li>
-          <li><b>МП РК</b><span>Государственная лицензия и полная аккредитация</span></li>
-          <li><b>IELTS</b><span>Официальный центр проведения экзамена</span></li>
+          <li><b>CIS</b><span data-i18n="acc.cis">Accredited to Council of International Schools standards</span></li>
+          <li><b>MCE</b><span data-i18n="acc.mce">Marshall Cavendish Education curriculum, Singapore</span></li>
+          <li><b data-i18n="acc.moeB">MoE RK</b><span data-i18n="acc.moe">State licence and full accreditation</span></li>
+          <li><b>IELTS</b><span data-i18n="acc.ielts">Official IELTS test centre</span></li>
         </ul>
       </div>
     </div>
@@ -118,57 +124,57 @@
   <section class="section section--tint" id="structure">
     <div class="container">
       <div class="head">
-        <span class="label reveal">Структура обучения</span>
-        <h2 class="title reveal">От подготовительного класса до университета</h2>
-        <p class="head__lead reveal">Ребёнок — главный участник процесса обучения. Его интересы и мнение важны для нас: у него есть право быть увиденным, услышанным и понятым.</p>
+        <span class="label reveal" data-i18n="st.label">Programmes</span>
+        <h2 class="title reveal" data-i18n="st.title">From pre-school to university</h2>
+        <p class="head__lead reveal" data-i18n="st.lead">The child is the main participant in learning, and their interests and opinions matter to us. Every child has the right to be seen, heard and understood.</p>
       </div>
 
       <div class="levels">
         <article class="level reveal">
-          <div class="level__img"><img src="https://ais.edu.kz/images/preschool.webp" alt="Подготовительный класс" loading="lazy"></div>
+          <div class="level__img"><img src="https://ais.edu.kz/images/preschool.webp" alt="" loading="lazy"></div>
           <div class="level__body">
-            <span class="level__grade">0 класс</span>
-            <h3>Подготовительный класс</h3>
+            <span class="level__grade" data-i18n="l0.grade">Grade 0</span>
+            <h3 data-i18n="l0.title">Pre-school</h3>
             <ul>
-              <li>Сингапурская программа на английском языке</li>
-              <li>Малые группы — 8–15 детей</li>
-              <li>Дневной сон и кружки после обеда</li>
+              <li data-i18n="l0.a">Singapore curriculum taught in English</li>
+              <li data-i18n="l0.b">Small groups of 8–15 children</li>
+              <li data-i18n="l0.c">Afternoon nap and clubs after lunch</li>
             </ul>
           </div>
         </article>
         <article class="level reveal">
-          <div class="level__img"><img src="https://ais.edu.kz/images/class.webp" alt="Начальная школа" loading="lazy"></div>
+          <div class="level__img"><img src="https://ais.edu.kz/images/class.webp" alt="" loading="lazy"></div>
           <div class="level__body">
-            <span class="level__grade">1–4 классы</span>
-            <h3>Начальная школа</h3>
+            <span class="level__grade" data-i18n="l1.grade">Grades 1–4</span>
+            <h3 data-i18n="l1.title">Primary school</h3>
             <ul>
-              <li>Полное соответствие ГОСО</li>
-              <li>Сингапурская методика: математика, английский, science</li>
-              <li>Грамотность, скорость чтения, работа с текстом</li>
+              <li data-i18n="l1.a">Fully aligned with the state education standard</li>
+              <li data-i18n="l1.b">Singapore method: maths, English, science</li>
+              <li data-i18n="l1.c">Literacy, reading speed and working with texts</li>
             </ul>
           </div>
         </article>
         <article class="level reveal">
-          <div class="level__img"><img src="https://ais.edu.kz/assets/home_3-DUqNiGeD.webp" alt="Среднее звено" loading="lazy"></div>
+          <div class="level__img"><img src="https://ais.edu.kz/assets/home_3-DUqNiGeD.webp" alt="" loading="lazy"></div>
           <div class="level__body">
-            <span class="level__grade">5–9 классы</span>
-            <h3>Среднее звено</h3>
+            <span class="level__grade" data-i18n="l2.grade">Grades 5–9</span>
+            <h3 data-i18n="l2.title">Middle school</h3>
             <ul>
-              <li>Больше часов математики и английского</li>
-              <li>Олимпиадная подготовка и Project-Based Learning</li>
-              <li>Английские классы и оснащённые лаборатории</li>
+              <li data-i18n="l2.a">Extra hours of maths and English</li>
+              <li data-i18n="l2.b">Olympiad preparation and project-based learning</li>
+              <li data-i18n="l2.c">English-medium classes and equipped labs</li>
             </ul>
           </div>
         </article>
         <article class="level reveal">
-          <div class="level__img"><img src="https://ais.edu.kz/images/high-school.webp" alt="Старшее звено" loading="lazy"></div>
+          <div class="level__img"><img src="https://ais.edu.kz/images/high-school.webp" alt="" loading="lazy"></div>
           <div class="level__body">
-            <span class="level__grade">10–11 классы</span>
-            <h3>Старшее звено</h3>
+            <span class="level__grade" data-i18n="l3.grade">Grades 10–11</span>
+            <h3 data-i18n="l3.title">High school</h3>
             <ul>
-              <li>Подготовка к ЕНТ и регулярные пробные ЕНТ</li>
-              <li>IELTS, SAT, NUET с сильными специалистами</li>
-              <li>Профориентация и индивидуальная траектория</li>
+              <li data-i18n="l3.a">UNT preparation with regular mock exams</li>
+              <li data-i18n="l3.b">IELTS, SAT and NUET with top specialists</li>
+              <li data-i18n="l3.c">Career guidance and an individual learning path</li>
             </ul>
           </div>
         </article>
@@ -181,22 +187,22 @@
     <div class="container">
       <div class="head head--row">
         <div>
-          <span class="label reveal">Инфраструктура</span>
-          <h2 class="title reveal">Кампус, где хочется учиться</h2>
+          <span class="label reveal" data-i18n="cp.label">Facilities</span>
+          <h2 class="title reveal" data-i18n="cp.title">A campus made for learning</h2>
         </div>
-        <p class="head__lead reveal">Двенадцать пространств для учёбы, спорта и творчества — от теплицы до футбольного поля.</p>
+        <p class="head__lead reveal" data-i18n="cp.lead">Twelve spaces for learning, sport and creativity — from a greenhouse to a football pitch.</p>
       </div>
       <div class="campus">
-        <figure class="campus__item campus__item--big reveal"><img src="https://ais.edu.kz/images/robotics.webp" alt="" loading="lazy"><figcaption>IT и робототехника</figcaption></figure>
-        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/library.webp" alt="" loading="lazy"><figcaption>Библиотека</figcaption></figure>
-        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/planthouse.webp" alt="" loading="lazy"><figcaption>Теплица</figcaption></figure>
-        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/ballet.webp" alt="" loading="lazy"><figcaption>Зал хореографии</figcaption></figure>
-        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/act_hall.webp" alt="" loading="lazy"><figcaption>Актовый зал</figcaption></figure>
-        <figure class="campus__item campus__item--wide reveal"><img src="https://ais.edu.kz/images/soccer.webp" alt="" loading="lazy"><figcaption>Футбольное поле</figcaption></figure>
-        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/sporthall.webp" alt="" loading="lazy"><figcaption>Спортивные залы</figcaption></figure>
-        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/art.webp" alt="" loading="lazy"><figcaption>Арт-студия</figcaption></figure>
+        <figure class="campus__item campus__item--big reveal"><img src="https://ais.edu.kz/images/robotics.webp" alt="" loading="lazy"><figcaption data-i18n="cp.robotics">IT &amp; robotics</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/library.webp" alt="" loading="lazy"><figcaption data-i18n="cp.library">Library</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/planthouse.webp" alt="" loading="lazy"><figcaption data-i18n="cp.green">Greenhouse</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/ballet.webp" alt="" loading="lazy"><figcaption data-i18n="cp.dance">Dance studio</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/act_hall.webp" alt="" loading="lazy"><figcaption data-i18n="cp.hall">Assembly hall</figcaption></figure>
+        <figure class="campus__item campus__item--wide reveal"><img src="https://ais.edu.kz/images/soccer.webp" alt="" loading="lazy"><figcaption data-i18n="cp.pitch">Football pitch</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/sporthall.webp" alt="" loading="lazy"><figcaption data-i18n="cp.sport">Sports halls</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/art.webp" alt="" loading="lazy"><figcaption data-i18n="cp.art">Art studio</figcaption></figure>
       </div>
-      <p class="campus__more reveal">А также: светлые классы · столовая · кабинеты кружков · охрана 24/7</p>
+      <p class="campus__more reveal" data-i18n="cp.more">Also: bright classrooms · canteen · club rooms · 24/7 security</p>
     </div>
   </section>
 
@@ -205,34 +211,34 @@
     <div class="container">
       <div class="head head--row">
         <div>
-          <span class="label label--light reveal">Жизнь в школе</span>
-          <h2 class="title reveal">После уроков всё только начинается</h2>
+          <span class="label label--light reveal" data-i18n="lf.label">Student life</span>
+          <h2 class="title reveal" data-i18n="lf.title">The day doesn’t end with the last lesson</h2>
         </div>
-        <p class="head__lead reveal">Ученики занимаются в секциях и клубах, выступают на крупных мероприятиях и представляют школу на соревнованиях по Казахстану и за рубежом.</p>
+        <p class="head__lead reveal" data-i18n="lf.lead">Students train in sports teams and clubs, perform at major events and represent the school at competitions across Kazakhstan and abroad.</p>
       </div>
     </div>
-    <div class="clubs" id="clubs" tabindex="0" aria-label="Кружки и секции — прокрутите вбок">
-      <figure class="club"><img src="https://ais.edu.kz/images/robotics-club.webp" alt="" loading="lazy"><figcaption>Робототехника</figcaption></figure>
-      <figure class="club"><img src="https://ais.edu.kz/images/dombyra.webp" alt="" loading="lazy"><figcaption>Домбыра</figcaption></figure>
-      <figure class="club"><img src="https://ais.edu.kz/images/chess.webp" alt="" loading="lazy"><figcaption>Шахматы</figcaption></figure>
-      <figure class="club"><img src="https://ais.edu.kz/images/vocal.webp" alt="" loading="lazy"><figcaption>Вокал</figcaption></figure>
-      <figure class="club"><img src="https://ais.edu.kz/images/dance.webp" alt="" loading="lazy"><figcaption>Хореография</figcaption></figure>
-      <figure class="club"><img src="https://ais.edu.kz/images/art-club.webp" alt="" loading="lazy"><figcaption>Арт-студия</figcaption></figure>
-      <figure class="club"><img src="https://ais.edu.kz/images/goncharka.webp" alt="" loading="lazy"><figcaption>Гончарное дело</figcaption></figure>
-      <figure class="club"><img src="https://ais.edu.kz/images/english.webp" alt="" loading="lazy"><figcaption>Английский клуб</figcaption></figure>
+    <div class="clubs" id="clubs" tabindex="0" aria-label="Clubs and activities — scroll sideways" data-i18n-attr="aria-label:aria.clubs">
+      <figure class="club"><img src="https://ais.edu.kz/images/robotics-club.webp" alt="" loading="lazy"><figcaption data-i18n="club.robotics">Robotics</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/dombyra.webp" alt="" loading="lazy"><figcaption data-i18n="club.dombyra">Dombyra</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/chess.webp" alt="" loading="lazy"><figcaption data-i18n="club.chess">Chess</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/vocal.webp" alt="" loading="lazy"><figcaption data-i18n="club.vocal">Vocals</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/dance.webp" alt="" loading="lazy"><figcaption data-i18n="club.dance">Dance</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/art-club.webp" alt="" loading="lazy"><figcaption data-i18n="club.art">Art studio</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/goncharka.webp" alt="" loading="lazy"><figcaption data-i18n="club.pottery">Pottery</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/english.webp" alt="" loading="lazy"><figcaption data-i18n="club.english">English club</figcaption></figure>
     </div>
     <div class="container clubs__nav">
-      <button class="round" data-dir="-1" aria-label="Назад">←</button>
-      <button class="round" data-dir="1" aria-label="Вперёд">→</button>
+      <button class="round" data-dir="-1" aria-label="Previous" data-i18n-attr="aria-label:aria.prev">←</button>
+      <button class="round" data-dir="1" aria-label="Next" data-i18n-attr="aria-label:aria.next">→</button>
     </div>
 
     <div class="container events">
-      <figure class="events__item events__item--tall reveal"><img src="https://ais.edu.kz/assets/home_2-C_P5t1Pp.webp" alt="Вечерний концерт AIS" loading="lazy"></figure>
-      <figure class="events__item reveal"><img src="https://ais.edu.kz/assets/home_7-Bsk3q2nQ.webp" alt="Танцевальный номер на сцене" loading="lazy"></figure>
-      <figure class="events__item reveal"><img src="https://ais.edu.kz/assets/home_5-UatgEmq1.webp" alt="Выступление ансамбля" loading="lazy"></figure>
+      <figure class="events__item events__item--tall reveal"><img src="https://ais.edu.kz/assets/home_2-C_P5t1Pp.webp" alt="AIS evening concert" data-i18n-attr="alt:ev.alt1" loading="lazy"></figure>
+      <figure class="events__item reveal"><img src="https://ais.edu.kz/assets/home_7-Bsk3q2nQ.webp" alt="Dance performance on stage" data-i18n-attr="alt:ev.alt2" loading="lazy"></figure>
+      <figure class="events__item reveal"><img src="https://ais.edu.kz/assets/home_5-UatgEmq1.webp" alt="Ensemble performance" data-i18n-attr="alt:ev.alt3" loading="lazy"></figure>
       <div class="events__text reveal">
-        <h3>Мероприятия и концерты</h3>
-        <p>Сцена, концерты, фестивали и турниры. Команды AIS ездят на соревнования по всему миру. А главное, здесь дети находят друзей и среду, которая мотивирует расти каждый день.</p>
+        <h3 data-i18n="ev.title">Events &amp; concerts</h3>
+        <p data-i18n="ev.text">Stage shows, concerts, festivals and tournaments. AIS teams travel to competitions around the world — and, most importantly, children find friends here and an environment that inspires them to grow every day.</p>
       </div>
     </div>
   </section>
@@ -241,34 +247,34 @@
   <section class="section" id="achievements">
     <div class="container">
       <div class="head">
-        <span class="label reveal">Достижения</span>
+        <span class="label reveal" data-i18n="ac.label">Achievements</span>
         <h2 class="title reveal">Our pride</h2>
-        <p class="head__lead reveal">Гордимся результатами учеников, педагогов и школы — в учёбе, олимпиадах, спорте и творчестве.</p>
+        <p class="head__lead reveal" data-i18n="ac.lead">We are proud of what our students, teachers and school achieve — in studies, olympiads, sport and the arts.</p>
       </div>
       <div class="pride">
         <article class="pride__card pride__card--photo reveal">
-          <img src="https://ais.edu.kz/assets/home_1-DeRF2kqT.webp" alt="Ученики AIS с наградами" loading="lazy">
-          <div><b>1 место</b><span>Республиканский хакатон GAMBIT</span></div>
+          <img src="https://ais.edu.kz/assets/home_1-DeRF2kqT.webp" alt="AIS students with awards" data-i18n-attr="alt:ac.alt" loading="lazy">
+          <div><b data-i18n="ac.firstB">1st place</b><span data-i18n="ac.first">National GAMBIT hackathon</span></div>
         </article>
         <article class="pride__card reveal">
           <b class="pride__num">9</b>
-          <p>выпускников стали студентами Nazarbayev University</p>
+          <p data-i18n="ac.nu">graduates became Nazarbayev University students</p>
         </article>
         <article class="pride__card pride__card--orange reveal">
           <b class="pride__num">≈70%</b>
-          <p>выпускников поступают в вузы на гранты</p>
+          <p data-i18n="ac.grants">of graduates enter university on state grants</p>
         </article>
         <article class="pride__card reveal">
           <b class="pride__num">U18–19</b>
-          <p>выпускники AIS играют за юношеские сборные Казахстана по футболу</p>
+          <p data-i18n="ac.u">AIS alumni play for Kazakhstan’s youth national football teams</p>
         </article>
         <article class="pride__card reveal">
           <b class="pride__num">18</b>
-          <p>учеников продолжили обучение в НИШ, РФМШ и БИЛ</p>
+          <p data-i18n="ac.nis">students continued their studies at NIS, RPhMS and BIL</p>
         </article>
         <article class="pride__card pride__card--violet reveal">
           <b class="pride__num">2025</b>
-          <p>призёры городского этапа Республиканской олимпиады по биологии, информатике, математике, истории и языкам</p>
+          <p data-i18n="ac.olymp">prize-winners of the city stage of the National Subject Olympiad in biology, computer science, maths, history and languages</p>
         </article>
       </div>
     </div>
@@ -279,26 +285,26 @@
     <div class="container">
       <div class="head head--row">
         <div>
-          <span class="label reveal">Новости</span>
-          <h2 class="title reveal">Последние события</h2>
+          <span class="label reveal" data-i18n="nw.label">News</span>
+          <h2 class="title reveal" data-i18n="nw.title">Latest news</h2>
         </div>
-        <a class="link-arrow reveal" href="https://ais.edu.kz/news" target="_blank" rel="noopener">Все новости →</a>
+        <a class="link-arrow reveal" href="https://ais.edu.kz/news" target="_blank" rel="noopener" data-i18n="nw.all">All news →</a>
       </div>
       <div class="news">
         <article class="news__card reveal">
           <img src="https://ais.edu.kz/news-photos/news-3/IMG_6342.webp" alt="" loading="lazy">
           <div class="news__body">
-            <time datetime="2026-09-14">14 сентября 2026</time>
-            <h3>Cardiff University Kazakhstan и AIS подписали меморандум о взаимопонимании</h3>
-            <p>Соглашение станет основой для сотрудничества, совместных инициатив и новых образовательных возможностей для учеников.</p>
+            <time datetime="2026-09-14" data-i18n="nw1.date">14 September 2026</time>
+            <h3 data-i18n="nw1.title">Cardiff University Kazakhstan and AIS sign a memorandum of understanding</h3>
+            <p data-i18n="nw1.text">The agreement lays the foundation for cooperation, joint initiatives and new learning opportunities for students.</p>
           </div>
         </article>
         <article class="news__card reveal">
           <img src="https://ais.edu.kz/news-photos/news-4/afl0.webp" alt="" loading="lazy">
           <div class="news__body">
-            <time datetime="2026-05-31">31 мая 2026</time>
-            <h3>AFL — одна из крупнейших школьных футбольных лиг Актобе</h3>
-            <p>Турнир проводится с 2023 года и объединяет школьные команды города.</p>
+            <time datetime="2026-05-31" data-i18n="nw2.date">31 May 2026</time>
+            <h3 data-i18n="nw2.title">AFL — one of the largest school football leagues in Aktobe</h3>
+            <p data-i18n="nw2.text">Held since 2023, the tournament brings together school teams from across the city.</p>
           </div>
         </article>
       </div>
@@ -309,25 +315,25 @@
   <section class="section" id="admissions">
     <div class="container">
       <div class="head">
-        <span class="label reveal">Поступление</span>
-        <h2 class="title reveal">Пять шагов до зачисления</h2>
+        <span class="label reveal" data-i18n="ad.label">Admissions</span>
+        <h2 class="title reveal" data-i18n="ad.title">Five steps to enrolment</h2>
       </div>
       <ol class="steps">
-        <li class="reveal"><span>01</span><h3>Знакомство и консультация</h3><p>Регистрация у менеджера по приёму — онлайн или офлайн.</p></li>
-        <li class="reveal"><span>02</span><h3>Тестирование и собеседование</h3><p>Оценка уровня знаний и подбор оптимальной образовательной среды.</p></li>
-        <li class="reveal"><span>03</span><h3>Заключение договора</h3><p>При положительном результате тестирования и собеседования.</p></li>
-        <li class="reveal"><span>04</span><h3>Вступительный взнос</h3><p>Оплата взноса и предоставление документов.</p></li>
-        <li class="reveal"><span>05</span><h3>Зачисление</h3><p>Ребёнок официально зачислен и готов начать обучение.</p></li>
+        <li class="reveal"><span>01</span><h3 data-i18n="s1.h">Introduction &amp; consultation</h3><p data-i18n="s1.p">Register with the admissions manager — online or in person.</p></li>
+        <li class="reveal"><span>02</span><h3 data-i18n="s2.h">Assessment &amp; interview</h3><p data-i18n="s2.p">We assess the student’s level and find the best learning environment.</p></li>
+        <li class="reveal"><span>03</span><h3 data-i18n="s3.h">Signing the contract</h3><p data-i18n="s3.p">After a positive assessment and interview result.</p></li>
+        <li class="reveal"><span>04</span><h3 data-i18n="s4.h">Enrolment fee</h3><p data-i18n="s4.p">Pay the fee and submit the required documents.</p></li>
+        <li class="reveal"><span>05</span><h3 data-i18n="s5.h">Enrolment</h3><p data-i18n="s5.p">Your child is officially enrolled and ready to start.</p></li>
       </ol>
 
       <div class="prices reveal">
         <div class="prices__head">
-          <h3>Стоимость обучения</h3>
-          <p>Актуальные условия уточняйте у менеджера по приёму.</p>
+          <h3 data-i18n="pr.title">Tuition fees</h3>
+          <p data-i18n="pr.note">Please confirm current terms with the admissions manager.</p>
         </div>
-        <div class="price"><span>0 класс</span><b>200 000 ₸</b><small>в месяц</small></div>
-        <div class="price price--main"><span>1–11 классы</span><b>245 000 ₸</b><small>в месяц</small></div>
-        <div class="price"><span>Вступительный взнос</span><b>200 000 ₸</b><small>единоразово</small></div>
+        <div class="price"><span data-i18n="pr.g0">Grade 0</span><b>200 000 ₸</b><small data-i18n="pr.month">per month</small></div>
+        <div class="price price--main"><span data-i18n="pr.g1">Grades 1–11</span><b>245 000 ₸</b><small data-i18n="pr.month">per month</small></div>
+        <div class="price"><span data-i18n="pr.fee">Enrolment fee</span><b>200 000 ₸</b><small data-i18n="pr.once">one-time</small></div>
       </div>
     </div>
   </section>
@@ -336,48 +342,48 @@
   <section class="section section--violet contact" id="contact">
     <div class="container contact__grid">
       <div>
-        <span class="label label--light reveal">Контакты</span>
-        <h2 class="title reveal">Запишитесь на&nbsp;экскурсию</h2>
-        <p class="contact__lead reveal">Поможем с поступлением, программами, оплатой и любыми другими вопросами.</p>
+        <span class="label label--light reveal" data-i18n="ct.label">Contact</span>
+        <h2 class="title reveal" data-i18n="ct.title">Book a school tour</h2>
+        <p class="contact__lead reveal" data-i18n="ct.lead">We’ll help with admissions, programmes, fees and any other questions.</p>
         <dl class="contact__list reveal">
-          <div><dt>Адрес</dt><dd>ул. Ораз Татеулы, 13А, г. Актобе, 030000</dd></div>
-          <div><dt>Телефон</dt><dd><a href="tel:+77786800636">+7 (778) 680 06 36</a></dd></div>
+          <div><dt data-i18n="ct.address">Address</dt><dd data-i18n="ct.addressV">13A Oraz Tateuly St, Aktobe 030000, Kazakhstan</dd></div>
+          <div><dt data-i18n="ct.phone">Phone</dt><dd><a href="tel:+77786800636">+7 (778) 680 06 36</a></dd></div>
           <div><dt>WhatsApp</dt><dd><a href="https://wa.me/77474662973" target="_blank" rel="noopener">+7 (747) 466 29 73</a></dd></div>
           <div><dt>Email</dt><dd><a href="mailto:info@akbobek.kz">info@akbobek.kz</a></dd></div>
-          <div><dt>Часы работы</dt><dd>Пн–Пт: 09:00–18:00</dd></div>
+          <div><dt data-i18n="ct.hours">Opening hours</dt><dd data-i18n="ct.hoursV">Mon–Fri: 09:00–18:00</dd></div>
         </dl>
       </div>
 
       <form class="form reveal" id="form" novalidate>
-        <h3>Заявка на консультацию</h3>
-        <p class="form__hint">Заявка откроется в WhatsApp приёмной комиссии — останется нажать «Отправить».</p>
+        <h3 data-i18n="f.title">Consultation request</h3>
+        <p class="form__hint" data-i18n="f.hint">Your request will open in the admissions office’s WhatsApp — just press Send.</p>
         <label class="field">
-          <span>Имя родителя</span>
+          <span data-i18n="f.name">Parent’s name</span>
           <input name="name" type="text" autocomplete="name" required>
-          <small class="err">Введите имя</small>
+          <small class="err" data-i18n="f.nameErr">Please enter your name</small>
         </label>
         <label class="field">
-          <span>Телефон</span>
+          <span data-i18n="f.phone">Phone</span>
           <input name="phone" id="f-phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
-          <small class="err">Введите номер полностью</small>
+          <small class="err" data-i18n="f.phoneErr">Please enter the full number</small>
         </label>
         <label class="field">
-          <span>Класс ребёнка</span>
+          <span data-i18n="f.grade">Child’s grade</span>
           <select name="grade" required>
-            <option value="" selected disabled>Выберите</option>
-            <option>0 класс (подготовительный)</option>
-            <option>1–4 классы</option>
-            <option>5–9 классы</option>
-            <option>10–11 классы</option>
+            <option value="" selected disabled data-i18n="f.choose">Select</option>
+            <option data-i18n="f.g0">Grade 0 (pre-school)</option>
+            <option data-i18n="f.g1">Grades 1–4</option>
+            <option data-i18n="f.g2">Grades 5–9</option>
+            <option data-i18n="f.g3">Grades 10–11</option>
           </select>
-          <small class="err">Выберите класс</small>
+          <small class="err" data-i18n="f.gradeErr">Please select a grade</small>
         </label>
-        <button type="submit" class="btn btn--orange btn--lg btn--block">Отправить заявку</button>
+        <button type="submit" class="btn btn--orange btn--lg btn--block" data-i18n="f.submit">Send request</button>
       </form>
     </div>
     <div class="container">
       <div class="map reveal">
-        <iframe title="Aqbobek International School на карте" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        <iframe title="Aqbobek International School on the map" data-i18n-attr="title:map.title" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps?q=Aqbobek%20International%20School%2C%20%D0%90%D0%BA%D1%82%D0%BE%D0%B1%D0%B5%2C%20%D0%9E%D1%80%D0%B0%D0%B7%20%D0%A2%D0%B0%D1%82%D0%B5%D1%83%D0%BB%D1%8B%2013%D0%90&z=16&output=embed"></iframe>
       </div>
     </div>
@@ -391,25 +397,25 @@
         <img src="https://ais.edu.kz/images/logo-violet.png" alt="" width="44" height="44">
         <span><b>AQBOBEK</b><small>International School</small></span>
       </a>
-      <p class="footer__about">Создание благополучного общества через сохранение национальных ценностей и воспитание глобального гражданства.</p>
+      <p class="footer__about" data-i18n="mission">Building a prosperous society by preserving national values and nurturing global citizenship.</p>
     </div>
-    <nav aria-label="Структура">
-      <h4>Структура</h4>
-      <a href="#structure">Подготовительный класс</a>
-      <a href="#structure">Начальная школа</a>
-      <a href="#structure">Среднее звено</a>
-      <a href="#structure">Старшее звено</a>
+    <nav aria-label="Programmes" data-i18n-attr="aria-label:ft.structure">
+      <h4 data-i18n="ft.structure">Programmes</h4>
+      <a href="#structure" data-i18n="l0.title">Pre-school</a>
+      <a href="#structure" data-i18n="l1.title">Primary school</a>
+      <a href="#structure" data-i18n="l2.title">Middle school</a>
+      <a href="#structure" data-i18n="l3.title">High school</a>
     </nav>
-    <nav aria-label="Быстрые ссылки">
-      <h4>Быстрые ссылки</h4>
-      <a href="#admissions">Поступление</a>
-      <a href="#achievements">Достижения</a>
-      <a href="https://ais.edu.kz/teachers" target="_blank" rel="noopener">Учителя</a>
-      <a href="https://olympiad.ais.edu.kz/" target="_blank" rel="noopener">Олимпиада</a>
+    <nav aria-label="Quick links" data-i18n-attr="aria-label:ft.quick">
+      <h4 data-i18n="ft.quick">Quick links</h4>
+      <a href="#admissions" data-i18n="nav.admissions">Admissions</a>
+      <a href="#achievements" data-i18n="nav.achievements">Achievements</a>
+      <a href="https://ais.edu.kz/teachers" target="_blank" rel="noopener" data-i18n="ft.teachers">Teachers</a>
+      <a href="https://olympiad.ais.edu.kz/" target="_blank" rel="noopener" data-i18n="nav.olymp">Olympiad</a>
     </nav>
     <div>
-      <h4>Контакты</h4>
-      <p>ул. Ораз Татеулы 13А, Актобе</p>
+      <h4 data-i18n="nav.contact">Contact</h4>
+      <p data-i18n="top.addr">13A Oraz Tateuly St, Aktobe</p>
       <a href="tel:+77786800636">+7 (778) 680 06 36</a>
       <a href="https://www.instagram.com/ais_aqbobek/" target="_blank" rel="noopener">@ais_aqbobek</a>
       <a href="mailto:info@akbobek.kz">info@akbobek.kz</a>
@@ -418,6 +424,7 @@
   <div class="container footer__bottom">© <span id="year">2026</span> Aqbobek International School</div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
