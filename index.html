@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aqbobek International School — Актобе</title>
+  <meta name="description" content="Aqbobek International School — школа в Актобе с аккредитацией CIS, сингапурской программой в начальной школе и трёхъязычным обучением. 0–11 классы.">
+  <meta name="theme-color" content="#50058A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://ais.edu.kz/images/logo-violet.png">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Все фото, видео и логотип взяты с официального сайта ais.edu.kz.
+     Для продакшена скопируйте их в папку /assets и замените пути. -->
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span class="topbar__item">ул. Ораз Татеулы, 13А, Актобе</span>
+    <div class="topbar__links">
+      <a href="tel:+77786800636">+7 (778) 680 06 36</a>
+      <a href="https://wa.me/77474662973" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.instagram.com/ais_aqbobek/" target="_blank" rel="noopener">@ais_aqbobek</a>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#top" class="brand" aria-label="Aqbobek International School — на главную">
+      <img src="https://ais.edu.kz/images/logo-violet.png" alt="" width="44" height="44">
+      <span><b>AQBOBEK</b><small>International School</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#about">О школе</a>
+      <a href="#structure">Структура</a>
+      <a href="#campus">Кампус</a>
+      <a href="#life">Жизнь школы</a>
+      <a href="#achievements">Достижения</a>
+      <a href="#admissions">Поступление</a>
+      <a href="#contact">Контакты</a>
+      <a href="https://olympiad.ais.edu.kz/" class="nav__olymp" target="_blank" rel="noopener">Олимпиада</a>
+    </nav>
+    <a href="#contact" class="btn btn--orange header__cta">Подать заявку</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <video class="hero__video" autoplay muted loop playsinline preload="metadata"
+           poster="https://ais.edu.kz/assets/home_4-BHAPINsf.webp">
+      <source src="https://ais.edu.kz/assets/background-720-DaouBQsi.mp4" type="video/mp4">
+    </video>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <p class="hero__pre">Aqbobek International School · Актобе</p>
+      <h1 class="hero__title">
+        Beyond the<br><span class="hero__word" id="typed">limits</span><span class="caret" aria-hidden="true"></span>
+      </h1>
+      <p class="hero__lead">Строим лидеров завтрашнего дня сегодня</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--orange btn--lg">Подать заявку</a>
+        <a href="https://wa.me/77474662973?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" target="_blank" rel="noopener" class="btn btn--outline-light btn--lg">Получить консультацию</a>
+      </div>
+    </div>
+    <ul class="hero__facts container" aria-label="Ключевые факты">
+      <li><b>CIS</b> аккредитованная школа</li>
+      <li><b>3 языка</b> казахский · русский · английский</li>
+      <li><b>Сингапурская</b> программа в начальной школе</li>
+    </ul>
+  </section>
+
+  <!-- NUMBERS -->
+  <section class="numbers" aria-label="Школа в цифрах">
+    <div class="container numbers__grid">
+      <div><b><span data-count="825">825</span>+</b><span>учеников</span></div>
+      <div><b><span data-count="85">85</span>+</b><span>опытных учителей</span></div>
+      <div><b data-count="6">6</b><span>лет работы AIS</span></div>
+      <div><b data-count="12">12</b><span>программ обучения</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about__media reveal">
+        <img src="https://ais.edu.kz/assets/home_4-BHAPINsf.webp" alt="Ученики AIS в актовом зале" loading="lazy">
+        <div class="about__badge">
+          <b>2012</b><span>открытие школы «Ақбөбек»</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <span class="label reveal">О школе</span>
+        <h2 class="title reveal">Национальные ценности и&nbsp;глобальное гражданство</h2>
+        <div class="mission reveal">
+          <h3>Наша миссия</h3>
+          <p>Создание благополучного общества через сохранение национальных ценностей и воспитание глобального гражданства.</p>
+        </div>
+        <p class="reveal">Aqbobek International School вырос из школы «Ақбөбек», открытой в 2012 году. В 2020 году она стала международной школой. Современный кампус оснащён технологиями и ресурсами, а учебная среда в нём комфортная и вдохновляющая.</p>
+        <ul class="accred reveal">
+          <li><b>CIS</b><span>Аккредитация по стандартам Council of International Schools</span></li>
+          <li><b>MCE</b><span>Учебная программа Marshall Cavendish Education, Сингапур</span></li>
+          <li><b>МП РК</b><span>Государственная лицензия и полная аккредитация</span></li>
+          <li><b>IELTS</b><span>Официальный центр проведения экзамена</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRUCTURE -->
+  <section class="section section--tint" id="structure">
+    <div class="container">
+      <div class="head">
+        <span class="label reveal">Структура обучения</span>
+        <h2 class="title reveal">От подготовительного класса до университета</h2>
+        <p class="head__lead reveal">Ребёнок — главный участник процесса обучения. Его интересы и мнение важны для нас: у него есть право быть увиденным, услышанным и понятым.</p>
+      </div>
+
+      <div class="levels">
+        <article class="level reveal">
+          <div class="level__img"><img src="https://ais.edu.kz/images/preschool.webp" alt="Подготовительный класс" loading="lazy"></div>
+          <div class="level__body">
+            <span class="level__grade">0 класс</span>
+            <h3>Подготовительный класс</h3>
+            <ul>
+              <li>Сингапурская программа на английском языке</li>
+              <li>Малые группы — 8–15 детей</li>
+              <li>Дневной сон и кружки после обеда</li>
+            </ul>
+          </div>
+        </article>
+        <article class="level reveal">
+          <div class="level__img"><img src="https://ais.edu.kz/images/class.webp" alt="Начальная школа" loading="lazy"></div>
+          <div class="level__body">
+            <span class="level__grade">1–4 классы</span>
+            <h3>Начальная школа</h3>
+            <ul>
+              <li>Полное соответствие ГОСО</li>
+              <li>Сингапурская методика: математика, английский, science</li>
+              <li>Грамотность, скорость чтения, работа с текстом</li>
+            </ul>
+          </div>
+        </article>
+        <article class="level reveal">
+          <div class="level__img"><img src="https://ais.edu.kz/assets/home_3-DUqNiGeD.webp" alt="Среднее звено" loading="lazy"></div>
+          <div class="level__body">
+            <span class="level__grade">5–9 классы</span>
+            <h3>Среднее звено</h3>
+            <ul>
+              <li>Больше часов математики и английского</li>
+              <li>Олимпиадная подготовка и Project-Based Learning</li>
+              <li>Английские классы и оснащённые лаборатории</li>
+            </ul>
+          </div>
+        </article>
+        <article class="level reveal">
+          <div class="level__img"><img src="https://ais.edu.kz/images/high-school.webp" alt="Старшее звено" loading="lazy"></div>
+          <div class="level__body">
+            <span class="level__grade">10–11 классы</span>
+            <h3>Старшее звено</h3>
+            <ul>
+              <li>Подготовка к ЕНТ и регулярные пробные ЕНТ</li>
+              <li>IELTS, SAT, NUET с сильными специалистами</li>
+              <li>Профориентация и индивидуальная траектория</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPUS -->
+  <section class="section" id="campus">
+    <div class="container">
+      <div class="head head--row">
+        <div>
+          <span class="label reveal">Инфраструктура</span>
+          <h2 class="title reveal">Кампус, где хочется учиться</h2>
+        </div>
+        <p class="head__lead reveal">Двенадцать пространств для учёбы, спорта и творчества — от теплицы до футбольного поля.</p>
+      </div>
+      <div class="campus">
+        <figure class="campus__item campus__item--big reveal"><img src="https://ais.edu.kz/images/robotics.webp" alt="" loading="lazy"><figcaption>IT и робототехника</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/library.webp" alt="" loading="lazy"><figcaption>Библиотека</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/planthouse.webp" alt="" loading="lazy"><figcaption>Теплица</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/ballet.webp" alt="" loading="lazy"><figcaption>Зал хореографии</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/act_hall.webp" alt="" loading="lazy"><figcaption>Актовый зал</figcaption></figure>
+        <figure class="campus__item campus__item--wide reveal"><img src="https://ais.edu.kz/images/soccer.webp" alt="" loading="lazy"><figcaption>Футбольное поле</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/sporthall.webp" alt="" loading="lazy"><figcaption>Спортивные залы</figcaption></figure>
+        <figure class="campus__item reveal"><img src="https://ais.edu.kz/images/art.webp" alt="" loading="lazy"><figcaption>Арт-студия</figcaption></figure>
+      </div>
+      <p class="campus__more reveal">А также: светлые классы · столовая · кабинеты кружков · охрана 24/7</p>
+    </div>
+  </section>
+
+  <!-- STUDENT LIFE -->
+  <section class="section section--violet" id="life">
+    <div class="container">
+      <div class="head head--row">
+        <div>
+          <span class="label label--light reveal">Жизнь в школе</span>
+          <h2 class="title reveal">После уроков всё только начинается</h2>
+        </div>
+        <p class="head__lead reveal">Ученики занимаются в секциях и клубах, выступают на крупных мероприятиях и представляют школу на соревнованиях по Казахстану и за рубежом.</p>
+      </div>
+    </div>
+    <div class="clubs" id="clubs" tabindex="0" aria-label="Кружки и секции — прокрутите вбок">
+      <figure class="club"><img src="https://ais.edu.kz/images/robotics-club.webp" alt="" loading="lazy"><figcaption>Робототехника</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/dombyra.webp" alt="" loading="lazy"><figcaption>Домбыра</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/chess.webp" alt="" loading="lazy"><figcaption>Шахматы</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/vocal.webp" alt="" loading="lazy"><figcaption>Вокал</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/dance.webp" alt="" loading="lazy"><figcaption>Хореография</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/art-club.webp" alt="" loading="lazy"><figcaption>Арт-студия</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/goncharka.webp" alt="" loading="lazy"><figcaption>Гончарное дело</figcaption></figure>
+      <figure class="club"><img src="https://ais.edu.kz/images/english.webp" alt="" loading="lazy"><figcaption>Английский клуб</figcaption></figure>
+    </div>
+    <div class="container clubs__nav">
+      <button class="round" data-dir="-1" aria-label="Назад">←</button>
+      <button class="round" data-dir="1" aria-label="Вперёд">→</button>
+    </div>
+
+    <div class="container events">
+      <figure class="events__item events__item--tall reveal"><img src="https://ais.edu.kz/assets/home_2-C_P5t1Pp.webp" alt="Вечерний концерт AIS" loading="lazy"></figure>
+      <figure class="events__item reveal"><img src="https://ais.edu.kz/assets/home_7-Bsk3q2nQ.webp" alt="Танцевальный номер на сцене" loading="lazy"></figure>
+      <figure class="events__item reveal"><img src="https://ais.edu.kz/assets/home_5-UatgEmq1.webp" alt="Выступление ансамбля" loading="lazy"></figure>
+      <div class="events__text reveal">
+        <h3>Мероприятия и концерты</h3>
+        <p>Сцена, концерты, фестивали и турниры. Команды AIS ездят на соревнования по всему миру. А главное, здесь дети находят друзей и среду, которая мотивирует расти каждый день.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="head">
+        <span class="label reveal">Достижения</span>
+        <h2 class="title reveal">Our pride</h2>
+        <p class="head__lead reveal">Гордимся результатами учеников, педагогов и школы — в учёбе, олимпиадах, спорте и творчестве.</p>
+      </div>
+      <div class="pride">
+        <article class="pride__card pride__card--photo reveal">
+          <img src="https://ais.edu.kz/assets/home_1-DeRF2kqT.webp" alt="Ученики AIS с наградами" loading="lazy">
+          <div><b>1 место</b><span>Республиканский хакатон GAMBIT</span></div>
+        </article>
+        <article class="pride__card reveal">
+          <b class="pride__num">9</b>
+          <p>выпускников стали студентами Nazarbayev University</p>
+        </article>
+        <article class="pride__card pride__card--orange reveal">
+          <b class="pride__num">≈70%</b>
+          <p>выпускников поступают в вузы на гранты</p>
+        </article>
+        <article class="pride__card reveal">
+          <b class="pride__num">U18–19</b>
+          <p>выпускники AIS играют за юношеские сборные Казахстана по футболу</p>
+        </article>
+        <article class="pride__card reveal">
+          <b class="pride__num">18</b>
+          <p>учеников продолжили обучение в НИШ, РФМШ и БИЛ</p>
+        </article>
+        <article class="pride__card pride__card--violet reveal">
+          <b class="pride__num">2025</b>
+          <p>призёры городского этапа Республиканской олимпиады по биологии, информатике, математике, истории и языкам</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="section section--tint" id="news">
+    <div class="container">
+      <div class="head head--row">
+        <div>
+          <span class="label reveal">Новости</span>
+          <h2 class="title reveal">Последние события</h2>
+        </div>
+        <a class="link-arrow reveal" href="https://ais.edu.kz/news" target="_blank" rel="noopener">Все новости →</a>
+      </div>
+      <div class="news">
+        <article class="news__card reveal">
+          <img src="https://ais.edu.kz/news-photos/news-3/IMG_6342.webp" alt="" loading="lazy">
+          <div class="news__body">
+            <time datetime="2026-09-14">14 сентября 2026</time>
+            <h3>Cardiff University Kazakhstan и AIS подписали меморандум о взаимопонимании</h3>
+            <p>Соглашение станет основой для сотрудничества, совместных инициатив и новых образовательных возможностей для учеников.</p>
+          </div>
+        </article>
+        <article class="news__card reveal">
+          <img src="https://ais.edu.kz/news-photos/news-4/afl0.webp" alt="" loading="lazy">
+          <div class="news__body">
+            <time datetime="2026-05-31">31 мая 2026</time>
+            <h3>AFL — одна из крупнейших школьных футбольных лиг Актобе</h3>
+            <p>Турнир проводится с 2023 года и объединяет школьные команды города.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSIONS -->
+  <section class="section" id="admissions">
+    <div class="container">
+      <div class="head">
+        <span class="label reveal">Поступление</span>
+        <h2 class="title reveal">Пять шагов до зачисления</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><span>01</span><h3>Знакомство и консультация</h3><p>Регистрация у менеджера по приёму — онлайн или офлайн.</p></li>
+        <li class="reveal"><span>02</span><h3>Тестирование и собеседование</h3><p>Оценка уровня знаний и подбор оптимальной образовательной среды.</p></li>
+        <li class="reveal"><span>03</span><h3>Заключение договора</h3><p>При положительном результате тестирования и собеседования.</p></li>
+        <li class="reveal"><span>04</span><h3>Вступительный взнос</h3><p>Оплата взноса и предоставление документов.</p></li>
+        <li class="reveal"><span>05</span><h3>Зачисление</h3><p>Ребёнок официально зачислен и готов начать обучение.</p></li>
+      </ol>
+
+      <div class="prices reveal">
+        <div class="prices__head">
+          <h3>Стоимость обучения</h3>
+          <p>Актуальные условия уточняйте у менеджера по приёму.</p>
+        </div>
+        <div class="price"><span>0 класс</span><b>200 000 ₸</b><small>в месяц</small></div>
+        <div class="price price--main"><span>1–11 классы</span><b>245 000 ₸</b><small>в месяц</small></div>
+        <div class="price"><span>Вступительный взнос</span><b>200 000 ₸</b><small>единоразово</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--violet contact" id="contact">
+    <div class="container contact__grid">
+      <div>
+        <span class="label label--light reveal">Контакты</span>
+        <h2 class="title reveal">Запишитесь на&nbsp;экскурсию</h2>
+        <p class="contact__lead reveal">Поможем с поступлением, программами, оплатой и любыми другими вопросами.</p>
+        <dl class="contact__list reveal">
+          <div><dt>Адрес</dt><dd>ул. Ораз Татеулы, 13А, г. Актобе, 030000</dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+77786800636">+7 (778) 680 06 36</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/77474662973" target="_blank" rel="noopener">+7 (747) 466 29 73</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@akbobek.kz">info@akbobek.kz</a></dd></div>
+          <div><dt>Часы работы</dt><dd>Пн–Пт: 09:00–18:00</dd></div>
+        </dl>
+      </div>
+
+      <form class="form reveal" id="form" novalidate>
+        <h3>Заявка на консультацию</h3>
+        <p class="form__hint">Заявка откроется в WhatsApp приёмной комиссии — останется нажать «Отправить».</p>
+        <label class="field">
+          <span>Имя родителя</span>
+          <input name="name" type="text" autocomplete="name" required>
+          <small class="err">Введите имя</small>
+        </label>
+        <label class="field">
+          <span>Телефон</span>
+          <input name="phone" id="f-phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+          <small class="err">Введите номер полностью</small>
+        </label>
+        <label class="field">
+          <span>Класс ребёнка</span>
+          <select name="grade" required>
+            <option value="" selected disabled>Выберите</option>
+            <option>0 класс (подготовительный)</option>
+            <option>1–4 классы</option>
+            <option>5–9 классы</option>
+            <option>10–11 классы</option>
+          </select>
+          <small class="err">Выберите класс</small>
+        </label>
+        <button type="submit" class="btn btn--orange btn--lg btn--block">Отправить заявку</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="map reveal">
+        <iframe title="Aqbobek International School на карте" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Aqbobek%20International%20School%2C%20%D0%90%D0%BA%D1%82%D0%BE%D0%B1%D0%B5%2C%20%D0%9E%D1%80%D0%B0%D0%B7%20%D0%A2%D0%B0%D1%82%D0%B5%D1%83%D0%BB%D1%8B%2013%D0%90&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#top" class="brand brand--light">
+        <img src="https://ais.edu.kz/images/logo-violet.png" alt="" width="44" height="44">
+        <span><b>AQBOBEK</b><small>International School</small></span>
+      </a>
+      <p class="footer__about">Создание благополучного общества через сохранение национальных ценностей и воспитание глобального гражданства.</p>
+    </div>
+    <nav aria-label="Структура">
+      <h4>Структура</h4>
+      <a href="#structure">Подготовительный класс</a>
+      <a href="#structure">Начальная школа</a>
+      <a href="#structure">Среднее звено</a>
+      <a href="#structure">Старшее звено</a>
+    </nav>
+    <nav aria-label="Быстрые ссылки">
+      <h4>Быстрые ссылки</h4>
+      <a href="#admissions">Поступление</a>
+      <a href="#achievements">Достижения</a>
+      <a href="https://ais.edu.kz/teachers" target="_blank" rel="noopener">Учителя</a>
+      <a href="https://olympiad.ais.edu.kz/" target="_blank" rel="noopener">Олимпиада</a>
+    </nav>
+    <div>
+      <h4>Контакты</h4>
+      <p>ул. Ораз Татеулы 13А, Актобе</p>
+      <a href="tel:+77786800636">+7 (778) 680 06 36</a>
+      <a href="https://www.instagram.com/ais_aqbobek/" target="_blank" rel="noopener">@ais_aqbobek</a>
+      <a href="mailto:info@akbobek.kz">info@akbobek.kz</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">© <span id="year">2026</span> Aqbobek International School</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
